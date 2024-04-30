@@ -1,4 +1,6 @@
 
+![Any LLM](https://raw.githubusercontent.com/MoazIrfan/Any-LLM/main/src/assets/any-llm.png)
+
 # Any-LLM
 
 > React app For Utilizing Any OpenAI Language Model
@@ -6,7 +8,7 @@
 <br>
 
 
-#### You'll need to create .env file and provide OpenAI key in the variable VITE_OPENAI_API_KEY
+#### You'll need to provide OpenAI key in the variable VITE_OPENAI_API_KEY in .env file 
 
 <br>
 
