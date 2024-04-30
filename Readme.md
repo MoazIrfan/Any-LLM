@@ -3,12 +3,12 @@
 
 # Any-LLM
 
-> React app For Utilizing Any OpenAI Language Model
+> React ChatGPT Template for Utilizing Any OpenAI Language Model.
 
 <br>
 
 
-#### You'll need to provide OpenAI key in the variable VITE_OPENAI_API_KEY in .env file 
+#### Enter your OpenAI key in the variable VITE_OPENAI_API_KEY in .env file and then run following commands:
 
 <br>
 
