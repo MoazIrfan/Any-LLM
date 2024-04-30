@@ -8,7 +8,7 @@
 <br>
 
 
-#### Enter your OpenAI key in the variable VITE_OPENAI_API_KEY in .env file and then run following commands:
+#### Enter your OpenAI key in the variable VITE_OPENAI_API_KEY in .env file and run following commands:
 
 <br>
 
