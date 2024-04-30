@@ -7,6 +7,15 @@
 
 <br>
 
+ChatGPT Template to utilize any OpenAI Language Model, i.e. GPT-3, GPT-4, Davinci, DALL-E and more.
+
+Interact with AI through conversational interface, with control over the behavior of LLMs.
+
+<br>
+
+[![📟](https://github.com/MoazIrfan/react-tailwind-app/raw/main/.github/install.png)](./../../)
+
+## Install
 
 #### Enter your OpenAI key in the variable VITE_OPENAI_API_KEY in .env file and run following commands:
 
