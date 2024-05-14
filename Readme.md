@@ -1,5 +1,5 @@
 
-![Any LLM](https://raw.githubusercontent.com/MoazIrfan/Any-LLM/main/src/assets/any-llm.png)
+![Any LLM](https://raw.githubusercontent.com/MoazIrfan/Any-LLM/main/src/assets/any-llm-preview.png)
 
 # Any-LLM
 
