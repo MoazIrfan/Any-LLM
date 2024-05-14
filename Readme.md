@@ -11,9 +11,15 @@ ChatGPT Template to utilize any OpenAI Language Model, i.e. GPT-3, GPT-4, Davinc
 
 Interact with AI through conversational interface, with control over the behavior of LLMs.
 
-Pro version preview:
+✨ Preview Pro version: 
 <br><br>
-[![Any LLM Video Preview](https://img.youtube.com/vi/fwrtSxjeRtk/0.jpg)](https://youtu.be/fwrtSxjeRtk)
+<a href="https://youtu.be/fwrtSxjeRtk" target="_blank" style="position:relative; display:inline-block;">
+  <img src="https://img.youtube.com/vi/fwrtSxjeRtk/0.jpg" alt="Any LLM Video Preview" style="width:100%;">
+  <img src="https://img.icons8.com/ios-filled/100/ffffff/play--v1.png" alt="Play Button" style="position:absolute; top:50%; left:50%; transform: translate(-50%, -50%); width: 50px; height: 50px;">
+</a>
+
+
+
 
 
 <br>
