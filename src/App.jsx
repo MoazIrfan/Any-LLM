@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import './App.css';
 import { sendMsgToOpenAI } from './openai';
+import { renderMessage } from './utils';
 import modelsList from './models';
 import gptLogo from './assets/chatgpt.svg';
 import addBtn from './assets/add-30.png';
@@ -38,15 +39,6 @@ function App() {
     setSelectedModel(event.target.value);
   };
 
-  const handleTemperatureChange = (event) => {
-    const inputValue = event.target.value;
-    // Check if the input value is a valid number between 0 and 1
-    const allowedValues = ["0", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1"];
-    if (allowedValues.includes(inputValue)) {
-      setTemperature(inputValue);
-    }
-  };
-
   useEffect(() => {
     msgEnd.current.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
@@ -67,26 +59,18 @@ function App() {
                   <option key={index} value={model}>{model}</option>
                 ))}
               </select>
-              <span className='box'>Text - Davinci, GPT 3, GPT 4</span>
-              <span className='box'>Image - DALL-E</span>
-              <span className='txt'>The model parameter controls the engine used to generate the response. For text, you can use models like Davinci, versions of GPT-3 and GPT-4. For generating images, you can use DALL-E.</span>
+              <span className='box' onClick={() => setSelectedModel('davinci-002')}>Davinci</span>
+              <span className='box' onClick={() => setSelectedModel('gpt-3.5-turbo')}>GPT 3.5</span>
+              <span className='box' onClick={() => setSelectedModel('dall-e-2')}>Dall-e</span>
+              <span className='txt'>The model parameter controls the engine used to generate the response. For chat, you can use models like Davinci, versions of GPT 3 and GPT 4. For generating images, you can use DALL-E.</span>
               
-              <p className="infoTxt">Temperature</p>
-              <input
-                className='temperatureInput'
-                type="text"
-                placeholder={0.7}
-              />
-              <span className='box'>0 - Logical</span>
-              <span className='box'>0.5 - Balanced</span>
-              <span className='box'>1 - Creative</span>
-              <span className='txt'>The temperature parameter controls the randomness of the model. 0 is the most logical, 1 is the most creative.</span>
             </div>
             
             <div className="lowerSide">
               <div className="listItems"><img src={rocket} alt="Upgrade" className="listItemsImg" />
-                <a href="https://github.com/MoazIrfan/Any-LLM" target="_blank" rel="noopener noreferrer">Star the repo</a>
+                <a href="#" target="_blank" rel="noopener noreferrer">Pro Verison</a><br />
               </div>
+                <span className='txt'>Enjoy the benefits of GPT 4 with pro version, upload images with your chat, and save your chats in db for later.</span>
             </div>
 
           </div>
@@ -96,8 +80,8 @@ function App() {
             {messages.map((message, index) => 
                 <div key={index} className={` ${message.isBot ? "chat bot" : "chat"}`}>
                 <img className="chatImg" src={message.isBot ? gptLogo : userIcon} alt="" /> 
-                  {!message.msg.includes("http") ? (
-                    <p className="txt">{message.msg}</p>
+                  {!message.msg.startsWith("http") ? (
+                    renderMessage(message.msg)
                   ) : (
                     <img className="result-image" src={message.msg} alt="result" />
                   )}
