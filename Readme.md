@@ -5,7 +5,7 @@
 
 # Any-LLM
 
-> React ChatGPT Template for Utilizing Any OpenAI Language Model.
+> React ChatGPT / GPT 4 Template for Utilizing Any OpenAI Language Model.
 
 <br>
 
