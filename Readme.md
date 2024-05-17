@@ -17,8 +17,7 @@ Interact with AI through conversational interface, with control over the behavio
 
 ✨ Pro version preview:
 
-
-https://github.com/MoazIrfan/Any-LLM/assets/14274515/45e9f3e1-4e6e-446f-889c-e67080121509
+https://github.com/MoazIrfan/Any-LLM/assets/14274515/74ad471f-ffcd-4914-9cb7-787cb886553c
 
 Enjoy the benefits of GPT 4 with pro version, upload images with your chat, and save your chats in db for later.
 
