@@ -2,7 +2,7 @@
 
 > WebUI for LLMs 
 
-Check out the [<u>Any-LLM-Website</u>](https://any-llm-website.vercel.app/)
+Check out the [<u>Any-LLM-Website</u>](https://any-llm-website.vercel.app/){:target="_blank"}
 
 
 React(MERN) ChatGPT / GPT 4 Template for Utilizing Any OpenAI Language Model.. Enjoy the benefits of GPT 4, upload images with your chat, and save your chats in db for later.
